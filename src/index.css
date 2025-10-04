@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 35 25% 96%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 65% 35%;
+    --primary-foreground: 35 25% 96%;
+
+    --secondary: 43 74% 66%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 35 20% 88%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 0 65% 35%;
+    --accent-foreground: 35 25% 96%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 35 25% 96%;
+
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 0 65% 35%;
+
+    --radius: 0.5rem;
+    
+    --crimson: 0 65% 35%;
+    --crimson-light: 0 65% 45%;
+    --gold: 43 74% 66%;
+    --gold-dark: 43 74% 50%;
+    --ink: 0 0% 10%;
+    --cream: 35 25% 96%;
+    
+    --gradient-ink: linear-gradient(135deg, hsl(0 0% 20%), hsl(0 0% 10%));
+    --gradient-gold: linear-gradient(135deg, hsl(43 74% 66%), hsl(43 74% 50%));
+    --gradient-crimson: linear-gradient(135deg, hsl(0 65% 45%), hsl(0 65% 35%));
+    
+    --shadow-elegant: 0 10px 40px -10px hsl(0 65% 35% / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 10% / 0.1);
+    
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 35 25% 96%;
+
+    --card: 0 0% 15%;
+    --card-foreground: 35 25% 96%;
+
+    --popover: 0 0% 15%;
+    --popover-foreground: 35 25% 96%;
+
+    --primary: 0 65% 45%;
+    --primary-foreground: 35 25% 96%;
+
+    --secondary: 43 74% 50%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 0 65% 45%;
+    --accent-foreground: 35 25% 96%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 35 25% 96%;
+
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 0 65% 45%;
+    
+    --crimson: 0 65% 45%;
+    --crimson-light: 0 65% 55%;
+    --gold: 43 74% 66%;
+    --gold-dark: 43 74% 50%;
+    --ink: 35 25% 96%;
+    --cream: 0 0% 10%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
